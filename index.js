@@ -8,5 +8,5 @@ wss.on("connection",ws=>{
     });
     ws.on("message",(data)=>{
         console.log(`The data recieved is ${data}`);
-    })
+    });
 });
