@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ws=new WebSocket("ws://localhost:3000");
+        ws.addEventListener("open",()=>{
+            console.log("We have an open connection");
+            ws.send("Hello from the client side")
+        })
+    </script>
+<h1>Sample web page for socket programming</h1>
+</body>
+</html>
